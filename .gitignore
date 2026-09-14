@@ -1,0 +1,220 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+
+# Do NOT ignore output/, figures/, or data/processed/ -- these are committed
+# intentionally so the repository is usable without first running the pipeline.
+
+{
+  "title": "Reproducibility Package: Technical Efficiency and Enteric Methane Emission Intensity in a Transition-Economy Dairy Sector: A Stochastic Frontier Analysis from Azerbaijan",
+  "description": "Complete data, code, and reproducibility package for a study estimating a translog stochastic frontier of dairy production for 67 administrative districts of Azerbaijan (2005-2024) and linking the resulting technical efficiency scores to a yield-interpolated, IPCC Tier 1-based measure of enteric methane emission intensity. Running code/run_all.py reproduces every table and figure reported in the manuscript and its Supporting Information, with internal verification assertions checking every output against its reported value.",
+  "creators": [
+    {
+      "name": "Tosun, Halil",
+      "affiliation": "ADA University, School of Agricultural and Food Sciences, Department of Animal Science, Baku, Azerbaijan",
+      "orcid": "0000-0001-5117-0390"
+    }
+  ],
+  "access_right": "open",
+  "license": "MIT",
+  "upload_type": "software",
+  "keywords": [
+    "stochastic frontier analysis",
+    "technical efficiency",
+    "enteric methane",
+    "dairy production",
+    "transition economy",
+    "post-conflict recovery",
+    "Azerbaijan",
+    "reproducibility"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "[manuscript DOI to be inserted upon acceptance]",
+      "resource_type": "publication-article"
+    }
+  ]
+}
+
+cff-version: 1.2.0
+title: "Reproducibility Package: Technical Efficiency and Enteric Methane Emission Intensity in a Transition-Economy Dairy Sector: A Stochastic Frontier Analysis from Azerbaijan"
+message: "If you use this reproducibility package, please cite it using the metadata below."
+type: software
+authors:
+  - family-names: "Tosun"
+    given-names: "Halil"
+    orcid: "https://orcid.org/0000-0001-5117-0390"
+    affiliation: "ADA University, School of Agricultural and Food Sciences, Department of Animal Science, Baku, Azerbaijan"
+    email: "halilibrahimtosun@gmail.com"
+email: "halilibrahimtosun@gmail.com"
+repository-code: "[DOI will be added once assigned upon archival release]"
+keywords:
+  - stochastic frontier analysis
+  - technical efficiency
+  - enteric methane
+  - dairy production
+  - transition economy
+  - post-conflict recovery
+  - reproducibility
+license: "MIT"
+version: "1.0.0"
+date-released: "2026-09-06"
+
+name: azerbaijan-dairy-te-methane-repro
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy=2.4.4
+  - pandas=3.0.2
+  - scipy=1.17.1
+  - matplotlib=3.10.8
+  - pip
+
+MIT License
+
+Copyright (c) 2026 Halil Tosun
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+# Technical Efficiency and Enteric Methane Emission Intensity in a Transition-Economy Dairy Sector: A Stochastic Frontier Analysis from Azerbaijan
+
+Reproducibility package for a study examining whether district-level
+technical efficiency in Azerbaijan's dairy sector is associated with
+enteric methane emission intensity, once both measures' shared
+mechanical dependence on milk yield is properly accounted for.
+
+**Author:** Halil Tosun, ADA University, School of Agricultural and
+Food Sciences, Department of Animal Science, Baku, Azerbaijan.
+ORCID: [0000-0001-5117-0390](https://orcid.org/0000-0001-5117-0390)
+
+## What This Repository Reproduces
+
+Running the pipeline end-to-end reproduces every table and figure
+reported in the manuscript and its Supporting Information:
+
+| Output | Description | Script |
+|---|---|---|
+| Table 1 | Descriptive statistics | `05_descriptive_stats.py` |
+| Table 2 | Stochastic frontier estimation results | `02_sfa_frontier_estimation.py` |
+| Table 3 | Second-stage regression | `06_second_stage_regression.py` |
+| Table 4 | Robustness checks | `07_robustness.py` |
+| Table S1 | Variance-inflation factors | `03_diagnostics.py` |
+| Table S3 | Frontier re-estimation excl. post-conflict districts | `03_diagnostics.py` |
+| Table S4 | Labor-augmented frontier | `03_diagnostics.py` |
+| Table S5 | Leave-one-out / random-exclusion test | `08_leave_one_out_test.py` |
+| Figure 1 | Technical efficiency trend by year | `09_figure1_te_trend.py` |
+| Figure 2 | District ranking | `10_figure2_district_ranking.py` |
+| Figure 3 | Raw vs. yield-netted association | `11_figure3_yield_confound.py` |
+
+Every script contains internal `assert` statements checking its output
+against the corresponding manuscript/Supporting Information value; the
+pipeline stops immediately if any value fails to reproduce.
+
+## Quick Start
+
+```bash
+conda env create -f environment.yml
+conda activate azerbaijan-dairy-te-methane-repro
+cd code
+python run_all.py
+```
+
+See `docs/Replication_Guide.md` for step-by-step instructions, how to
+run individual scripts, and how to adapt this pipeline to a different
+setting.
+
+## Repository Structure
+
+```
+code/               Numbered analysis scripts (01-11) + shared config (_paths.py) + run_all.py
+data/raw/            Original SSC RA source tables (public official statistics)
+data/processed/      Harmonized analytical panel, generated by the pipeline
+output/               Generated table CSVs
+figures/               Generated figure PNGs
+docs/
+  DATA_DESCRIPTION.md         Full source-table provenance for every variable
+  CODEBOOK.md                 Model equations and implementation notes
+  REPRODUCIBILITY_CHECKLIST.md  Verification results + documented analytical corrections
+  Replication_Guide.md        Step-by-step usage and troubleshooting
+```
+
+## Data Source
+
+All raw data are publicly available official statistics from the State
+Statistical Committee of the Republic of Azerbaijan (SSC RA), 2025,
+*Agriculture, Forestry and Fishery -- Statistical Yearbook Data*
+(https://www.stat.gov.az/source/agriculture/en/), and IPCC (2006),
+*2006 IPCC Guidelines for National Greenhouse Gas Inventories*, Volume
+4, Chapter 10. No proprietary or restricted-access data are used. Full
+provenance for every variable is documented in `docs/DATA_DESCRIPTION.md`.
+
+## Transparency Note
+
+This package documents, rather than silently absorbs, every
+substantive correction identified during its preparation -- including
+a stale set of correlation statistics in an earlier draft of the
+manuscript's Results section that predated a later cattle/buffalo
+species-denominator correction, and two implementation bugs in the
+diagnostic scripts (an incorrect labor-variable form in the
+variance-inflation-factor check, and an unreliable optimizer
+convergence flag). See `docs/REPRODUCIBILITY_CHECKLIST.md` for full
+detail on each. The manuscript accompanying this repository reflects
+all of these corrections.
+
+## Independence from Related Work
+
+Ten districts examined in this study correspond to territories
+reintegrated following the 2020 ceasefire. This repository is
+self-contained and does not import from, or depend on, any other
+project's code or data; all district-level statistics used here are
+independently harmonized from their original SSC RA source tables by
+`code/01_data_preparation.py`.
+
+## License
+
+Code and documentation in this repository are released under the MIT
+License (see `LICENSE`). Underlying data are public official
+statistics; see `docs/DATA_DESCRIPTION.md` for source citations.
+
+## Citation
+
+See `CITATION.cff` for citation metadata.
+
+numpy==2.4.4
+pandas==3.0.2
+scipy==1.17.1
+matplotlib==3.10.8
