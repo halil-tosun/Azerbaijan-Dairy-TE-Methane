@@ -1,0 +1,4 @@
+specification,TE_coef,SE,p,N,districts,R2,year_FE,wild_bootstrap_p
+(1) Full sample + PC dummy,-0.0234,0.0361,0.5203,920,59,0.508,Yes,
+"(2) Excl. PC, no year FE",-0.0353,0.0131,0.0099,832,49,0.735,No,
+(3) Excl. PC + year FE (primary),-0.0288,0.0132,0.0332,832,49,0.758,Yes,0.024

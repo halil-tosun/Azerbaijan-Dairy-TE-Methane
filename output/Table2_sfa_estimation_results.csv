@@ -1,0 +1,25 @@
+specification,variable,coef,se
+Cobb-Douglas,Constant,10.4412,0.0218
+Cobb-Douglas,ln(Cows),1.08,0.0179
+Cobb-Douglas,ln(Fodder),-0.0167,0.0066
+Cobb-Douglas,ln(Land),0.0298,0.0064
+Cobb-Douglas,sigma_u,0.3389,
+Cobb-Douglas,sigma_v,0.2528,
+Cobb-Douglas,gamma,0.6424,
+Cobb-Douglas,log-likelihood,-263.262,
+Cobb-Douglas,N,920.0,
+Translog,Constant,10.413,0.0239
+Translog,ln(Cows),1.0364,0.0246
+Translog,ln(Fodder),-0.0203,0.009
+Translog,ln(Land),0.0464,0.0074
+Translog,0.5 ln(Cows)^2,-0.1491,0.03
+Translog,0.5 ln(Fodder)^2,0.0021,0.0063
+Translog,0.5 ln(Land)^2,0.0246,0.0054
+Translog,ln(Cows)*ln(Fodder),0.0466,0.0101
+Translog,ln(Cows)*ln(Land),-0.0041,0.0115
+Translog,ln(Fodder)*ln(Land),-0.0081,0.0039
+Translog,sigma_u,0.3342,
+Translog,sigma_v,0.2419,
+Translog,gamma,0.6561,
+Translog,log-likelihood,-233.306,
+Translog,N,920.0,

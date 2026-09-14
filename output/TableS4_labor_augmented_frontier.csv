@@ -1,0 +1,7 @@
+variable,coef
+ln(Cows),0.829
+ln(Fodder),-0.011
+ln(Land),0.023
+ln(Labor),0.222
+OLS residual skewness (4-input),0.071
+"OLS residual skewness (3-input, same N=753)",-1.042

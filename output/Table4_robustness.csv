@@ -1,0 +1,6 @@
+specification,TE_coef,SE,p,N,districts
+Primary (combined cattle+buffalo denom.),-0.0288,0.0132,0.033,832,49
+Cattle-only denominator (uncorrected),-0.0334,0.0157,0.039,832,49
+Low-buffalo-share (<5%) subsample,-0.0423,0.0308,0.179,411,36
+IPCC Tier 1 lower bound (-30% EF),-0.0202,0.0092,0.033,832,49
+IPCC Tier 1 upper bound (+50% EF),-0.0433,0.0197,0.033,832,49

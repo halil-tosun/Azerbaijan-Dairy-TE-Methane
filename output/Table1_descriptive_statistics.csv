@@ -1,0 +1,17 @@
+panel,variable,mean,sd,min,max
+Panel A: Full sample (N=920; 59 districts),Milk production (tons),33285.65,21470.352,137.0,167207.0
+Panel A: Full sample (N=920; 59 districts),Dairy cattle stock (head),20210.185,10430.99,144.0,62341.0
+Panel A: Full sample (N=920; 59 districts),Combined cattle+buffalo stock (head),22072.753,11651.099,148.0,63849.0
+Panel A: Full sample (N=920; 59 districts),Fodder-crop sown area (ha),6786.667,7628.083,1.0,34994.0
+Panel A: Full sample (N=920; 59 districts),Total land in use (ha),4224.54,6197.904,2.0,55034.0
+Panel A: Full sample (N=920; 59 districts),Milk yield (kg head-1 yr-1),1514.698,534.509,61.74,4819.405
+Panel A: Full sample (N=920; 59 districts),Technical efficiency (TE),0.776,0.09,0.123,0.938
+Panel A: Full sample (N=920; 59 districts),CH4 intensity (kg CH4/kg milk),0.05,0.028,0.023,0.745
+Panel B: Excl. post-conflict (N=832; 49 districts),Milk production (tons),35177.573,21327.914,5209.0,167207.0
+Panel B: Excl. post-conflict (N=832; 49 districts),Dairy cattle stock (head),21253.549,10200.861,4063.0,62341.0
+Panel B: Excl. post-conflict (N=832; 49 districts),Combined cattle+buffalo stock (head),23270.195,11399.478,4082.0,63849.0
+Panel B: Excl. post-conflict (N=832; 49 districts),Fodder-crop sown area (ha),7166.82,7843.052,2.0,34994.0
+Panel B: Excl. post-conflict (N=832; 49 districts),Total land in use (ha),4260.734,6231.089,2.0,55034.0
+Panel B: Excl. post-conflict (N=832; 49 districts),Milk yield (kg head-1 yr-1),1539.04,530.301,682.082,4819.405
+Panel B: Excl. post-conflict (N=832; 49 districts),Technical efficiency (TE),0.782,0.077,0.537,0.938
+Panel B: Excl. post-conflict (N=832; 49 districts),CH4 intensity (kg CH4/kg milk),0.048,0.009,0.023,0.092

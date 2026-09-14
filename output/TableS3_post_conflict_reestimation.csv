@@ -1,0 +1,3 @@
+diagnostic,full_sample,excl_post_conflict
+OLS residual skewness,-1.18,0.52
+MLE (BFGS) convergence,True,False

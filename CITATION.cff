@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: "Reproducibility Package: Technical Efficiency and Enteric Methane Emission Intensity in a Transition-Economy Dairy Sector: A Stochastic Frontier Analysis from Azerbaijan"
+message: "If you use this reproducibility package, please cite it using the metadata below."
+type: software
+authors:
+  - family-names: "Tosun"
+    given-names: "Halil"
+    orcid: "https://orcid.org/0000-0001-5117-0390"
+    affiliation: "ADA University, School of Agricultural and Food Sciences, Department of Animal Science, Baku, Azerbaijan"
+    email: "halilibrahimtosun@gmail.com"
+email: "halilibrahimtosun@gmail.com"
+repository-code: "[DOI will be added once assigned upon archival release]"
+keywords:
+  - stochastic frontier analysis
+  - technical efficiency
+  - enteric methane
+  - dairy production
+  - transition economy
+  - post-conflict recovery
+  - reproducibility
+license: "MIT"
+version: "1.0.0"
+date-released: "2026-09-06"
