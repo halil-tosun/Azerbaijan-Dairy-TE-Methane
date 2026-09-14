@@ -1,0 +1,31 @@
+{
+  "title": "Reproducibility Package: Technical Efficiency and Enteric Methane Emission Intensity in a Transition-Economy Dairy Sector: A Stochastic Frontier Analysis from Azerbaijan",
+  "description": "Complete data, code, and reproducibility package for a study estimating a translog stochastic frontier of dairy production for 67 administrative districts of Azerbaijan (2005-2024) and linking the resulting technical efficiency scores to a yield-interpolated, IPCC Tier 1-based measure of enteric methane emission intensity. Running code/run_all.py reproduces every table and figure reported in the manuscript and its Supporting Information, with internal verification assertions checking every output against its reported value.",
+  "creators": [
+    {
+      "name": "Tosun, Halil",
+      "affiliation": "ADA University, School of Agricultural and Food Sciences, Department of Animal Science, Baku, Azerbaijan",
+      "orcid": "0000-0001-5117-0390"
+    }
+  ],
+  "access_right": "open",
+  "license": "MIT",
+  "upload_type": "software",
+  "keywords": [
+    "stochastic frontier analysis",
+    "technical efficiency",
+    "enteric methane",
+    "dairy production",
+    "transition economy",
+    "post-conflict recovery",
+    "Azerbaijan",
+    "reproducibility"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "[manuscript DOI to be inserted upon acceptance]",
+      "resource_type": "publication-article"
+    }
+  ]
+}
